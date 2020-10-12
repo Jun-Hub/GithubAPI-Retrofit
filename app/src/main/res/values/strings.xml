@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ThingsFlow</string>
+    <string name="search">검색하기</string>
+    <string name="hint_org">Organization</string>
+    <string name="hint_repo">Repository</string>
+
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+
+    <string name="alert">조회할 수 없는 Repository입니다.</string>
+
+    <string name="issue_info">#%1$d : %2$s</string>
+    <string name="searched_issue">%1$s / %2$s</string>
+</resources>
