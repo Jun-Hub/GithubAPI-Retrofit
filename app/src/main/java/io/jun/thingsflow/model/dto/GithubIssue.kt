@@ -5,12 +5,18 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class GithubIssue (
+data class GithubIssue(
     @PrimaryKey(autoGenerate = true) val id: Int,
-    @ColumnInfo val number: Int,
-    @ColumnInfo val title: String,
-    @ColumnInfo val body: String,
-    @ColumnInfo val user: User
+    @ColumnInfo val org: String,
+    @ColumnInfo val repo: String,
+    @ColumnInfo val issues: List<Issue>
+)
+
+data class Issue (
+    val number: Int,
+    val title: String,
+    val body: String,
+    val user: User
 )
 
 data class User (

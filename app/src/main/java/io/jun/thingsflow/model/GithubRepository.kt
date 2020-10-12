@@ -16,8 +16,4 @@ class GithubRepository(private val githubDao: GithubDao) {
     fun delete(githubIssue: GithubIssue) = githubDao.delete(githubIssue)
 
     fun getIssueById(id: Int) = githubDao.loadById(id)
-
-    fun getIssue(org:String, repo:String) {
-
-    }
 }

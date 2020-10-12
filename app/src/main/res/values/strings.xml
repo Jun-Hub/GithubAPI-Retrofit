@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ThingsFlow</string>
     <string name="search">검색하기</string>
+    <string name="search_history">검색기록 조회(Room)</string>
     <string name="hint_org">Organization</string>
     <string name="hint_repo">Repository</string>
 

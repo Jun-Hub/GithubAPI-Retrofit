@@ -11,14 +11,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import io.jun.thingsflow.R
-import io.jun.thingsflow.model.dto.GithubIssue
+import io.jun.thingsflow.model.dto.Issue
 import io.jun.thingsflow.view.IssueActivity
 
 class IssueAdapter internal constructor(private val context: Context)
     : RecyclerView.Adapter<IssueAdapter.IssueViewHolder>() {
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
-    private var items: List<GithubIssue> = emptyList()
+    private var items: List<Issue> = emptyList()
     private val imageURL = "https://s3.ap-northeast-2.amazonaws.com/hellobot-kr-test/image/main_logo.png"
     private val webURL = "https://thingsflow.com/ko/home"
 
@@ -66,7 +66,7 @@ class IssueAdapter internal constructor(private val context: Context)
         }
     }
 
-    fun setIssue(issues: List<GithubIssue>) {
+    fun setIssue(issues: List<Issue>) {
         items = issues
         notifyDataSetChanged()
     }

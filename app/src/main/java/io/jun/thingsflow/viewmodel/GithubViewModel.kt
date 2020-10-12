@@ -25,6 +25,4 @@ class GithubViewModel(application: Application) : AndroidViewModel(application) 
     fun delete(githubIssue: GithubIssue) = repository.delete(githubIssue)
 
     fun getIssueById(id: Int) = repository.getIssueById(id)
-
-    fun getIssue(org:String, repo:String) = repository.getIssue(org, repo)
 }
